@@ -1,4 +1,4 @@
-package bootwildfly;
+package springbootapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
