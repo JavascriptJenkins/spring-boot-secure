@@ -25,6 +25,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+        <!-- This brings in automatic SPRING MVC view support -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
 
 
 		<dependency>
