@@ -4,7 +4,6 @@ package springbootapi.restapi.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import springbootapi.objects.HelloObject;
 import springbootapi.restapi.Hello;
 
 import java.util.ArrayList;
@@ -57,7 +56,7 @@ public class HelloController {
 
 
      @RequestMapping("getHelloObjects")
-     public ArrayList<HelloObject> getHelloObjects(){
+     public ArrayList getHelloObjects(){
 
 
 
