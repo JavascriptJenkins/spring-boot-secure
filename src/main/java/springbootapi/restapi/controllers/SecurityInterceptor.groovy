@@ -27,31 +27,31 @@ class SecurityInterceptor implements HandlerInterceptor{
     boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         //your custom logic here.
 
-        try{
-
-            X509Certificate[] certs = (X509Certificate[]) HttpServletRequest["javax.servlet.request.X509Certificate"]
-
-
-        } catch(Exception ex){
-            System.println("----------------------------------------------------------")
-            System.println("No x509 certificate found: "+ex)
-        }
-
-        System.println("----------------------------------------------------------")
-        System.println("Incoming httpServletRequest Header -----------------")
-        System.println("Incoming httpServletRequest Header -----------------")
-        System.println("Incoming httpServletRequest Header -----------------")
-
-
-
-        Enumeration<String> headerNames = httpServletRequest.getHeaderNames()
-        while (headerNames.hasMoreElements()) {
-            String headerName = headerNames.nextElement()
-            System.println("Header Name: " + headerName)
-            String headerValue = httpServletRequest.getHeader(headerName)
-            System.println("Header Value: " + headerValue)
-            System.println("----------------------------------------------------------")
-        }
+//        try{
+//
+//            X509Certificate[] certs = (X509Certificate[]) HttpServletRequest["javax.servlet.request.X509Certificate"]
+//
+//
+//        } catch(Exception ex){
+//            System.println("----------------------------------------------------------")
+//            System.println("No x509 certificate found: "+ex)
+//        }
+//
+//        System.println("----------------------------------------------------------")
+//        System.println("Incoming httpServletRequest Header -----------------")
+//        System.println("Incoming httpServletRequest Header -----------------")
+//        System.println("Incoming httpServletRequest Header -----------------")
+//
+//
+//
+//        Enumeration<String> headerNames = httpServletRequest.getHeaderNames()
+//        while (headerNames.hasMoreElements()) {
+//            String headerName = headerNames.nextElement()
+//            System.println("Header Name: " + headerName)
+//            String headerValue = httpServletRequest.getHeader(headerName)
+//            System.println("Header Value: " + headerValue)
+//            System.println("----------------------------------------------------------")
+//        }
 
         return true
 
