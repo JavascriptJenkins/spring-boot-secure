@@ -33,7 +33,7 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .and()
                 .httpBasic()
-                .and()
+
 
 
 
