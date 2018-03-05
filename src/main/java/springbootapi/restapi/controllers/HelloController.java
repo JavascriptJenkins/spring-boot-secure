@@ -37,7 +37,7 @@ import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/Hello/")
-public class HelloController {
+public class HelloController extends SecurityInterceptor {
 
 
 
