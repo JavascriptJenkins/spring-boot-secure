@@ -61,6 +61,7 @@ public class HelloController extends SecurityInterceptor {
      public ArrayList getHelloObjects(){
 
 
+        System.out.println("GETTING HELLO OBJECTS");
 
          return hello.getHelloObjects();
      }
