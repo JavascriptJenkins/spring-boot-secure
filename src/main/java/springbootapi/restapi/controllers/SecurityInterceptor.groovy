@@ -36,22 +36,23 @@ class SecurityInterceptor implements HandlerInterceptor{
 //            System.println("----------------------------------------------------------")
 //            System.println("No x509 certificate found: "+ex)
 //        }
-//
-//        System.println("----------------------------------------------------------")
-//        System.println("Incoming httpServletRequest Header -----------------")
-//        System.println("Incoming httpServletRequest Header -----------------")
-//        System.println("Incoming httpServletRequest Header -----------------")
-//
-//
-//
-//        Enumeration<String> headerNames = httpServletRequest.getHeaderNames()
-//        while (headerNames.hasMoreElements()) {
-//            String headerName = headerNames.nextElement()
-//            System.println("Header Name: " + headerName)
-//            String headerValue = httpServletRequest.getHeader(headerName)
-//            System.println("Header Value: " + headerValue)
-//            System.println("----------------------------------------------------------")
-//        }
+
+        System.println("----------------------------------------------------------------------")
+        System.println("----------------- Incoming httpServletRequest Header -----------------")
+        System.println("----------------- Incoming httpServletRequest Header -----------------")
+        System.println("----------------- Incoming httpServletRequest Header -----------------")
+        System.println("----------------------------------------------------------------------")
+
+
+
+        Enumeration<String> headerNames = httpServletRequest.getHeaderNames()
+        while (headerNames.hasMoreElements()) {
+            String headerName = headerNames.nextElement()
+            System.println("Header Name: " + headerName)
+            String headerValue = httpServletRequest.getHeader(headerName)
+            System.println("Header Value: " + headerValue)
+            System.println("----------------------------------------------------------")
+        }
 
         return true
 
