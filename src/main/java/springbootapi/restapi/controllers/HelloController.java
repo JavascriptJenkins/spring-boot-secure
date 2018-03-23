@@ -2,7 +2,7 @@ package springbootapi.restapi.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import springbootapi.restapi.Hello;
@@ -56,7 +56,7 @@ public class HelloController extends SecurityInterceptor {
 
 
 
-     @PreAuthorize("hasAuthority('ROLE_USER')")
+ //    @PreAuthorize("hasAuthority('ROLE_USER')")
      @RequestMapping("getHelloObjects")
      public ArrayList getHelloObjects(){
 
