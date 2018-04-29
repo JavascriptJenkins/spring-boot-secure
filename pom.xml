@@ -119,7 +119,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<start-class>springbootapi.Application</start-class>
+		<start-class>com.genre.base.Application</start-class>
 	</properties>
 
 
