@@ -83,12 +83,10 @@ class ScraperController {
     static boolean isElementPresent(By by, WebElement element)
     {
         boolean present
-        try
-        {
+        try {
             element.findElement(by)
             present = true
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             present = false
         }
         return present
