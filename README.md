@@ -1,5 +1,8 @@
 This is a baby seedling application to grow your spring app into a big glorious plant!
 
+   ![alt text](./src/main/resources/pics/seedling-1.png)
+
+
 Test it out with this sweet curl command
 
     curl -X POST \
